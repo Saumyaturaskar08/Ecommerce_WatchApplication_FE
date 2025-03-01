@@ -1,0 +1,101 @@
+body {
+  background-color: #d2ccccd4; /* Light gray background */
+}
+
+.dflex {
+  display: flex;
+}
+
+.card {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: #fff; /* White card background */
+  width: 250px; /* Fixed width for vertical cards */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Fixed height for images */
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  padding: 10px;
+  background-color: #f7f7f7; /* Light gray card body */
+  text-align: center; /* Center text in card body */
+}
+
+.card-title {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333; /* Dark gray title */
+}
+
+.card-body p {
+  font-size: 14px;
+}
+
+.btn {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: #ffff00; /* Yellow button */
+  color: #000; /* Black text */
+}
+
+.btn-primary:hover {
+  background-color: #cccc00; /* Darker yellow on hover */
+}
+
+.btn-warning {
+  background-color: #808080; /* Gray button */
+  color: #000; /* Black text */
+}
+
+.btn-warning:hover {
+  background-color: #666666; /* Darker gray on hover */
+}
+
+.btn-danger {
+  background-color: #000; /* Black button */
+  color: #fff; /* White text */
+}
+
+.btn-danger:hover {
+  background-color: #333; /* Darker black on hover */
+}
+
+.btn-info {
+  background-color: #808080; /* Gray button */
+  color: #000; /* Black text */
+}
+
+.btn-info:hover {
+  background-color: #666666; /* Darker gray on hover */
+}
+
+/* Responsive layout adjustments */
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 45%; /* Adjust card width for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .card {
+    width: 90%; /* Adjust card width for very small screens */
+  }
+}

@@ -1,0 +1,150 @@
+/* .card {
+    max-width: 600px;
+    margin: auto;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+}
+
+.rating {
+    margin-top: 10px;
+}
+
+button {
+    margin-bottom: 10px;
+}
+
+input.form-control {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input.form-control:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+/* Wrapper to contain the card */
+.km-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+/* Card styling */
+.km-card {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Product image */
+.km-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Text formatting */
+.km-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+.km-body p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Comments section */
+.km-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #444;
+}
+
+.km-comment {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.km-comment h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+.km-comment p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Comment input & button */
+.km-comment-box {
+    margin-top: 20px;
+}
+
+.km-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Buttons */
+.km-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 19px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.km-btn.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.km-btn.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.km-btn.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.km-btn.btn-success:hover {
+    background-color: #218838;
+}
+
+.km-btn.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+
+.km-btn.btn-secondary:hover {
+    background-color: #5a6268;
+}
