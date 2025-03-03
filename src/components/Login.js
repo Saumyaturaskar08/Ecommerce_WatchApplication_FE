@@ -4,6 +4,7 @@ import Ct from './Ct'
 import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
+ 
   let [data,setData]=useState({"_id":"","pwd":""})
   let [msg,setMsg]=useState("")
   let navigate=useNavigate()
@@ -26,6 +27,8 @@ const Login = () => {
     
   }
   return (
+    
+      
     <div className='container-fluid bg-primary'>
       < div className='form'>
       <div className='text-danger'>{msg}</div>
@@ -34,7 +37,8 @@ const Login = () => {
  onChange={fun} value={data.pwd} name="pwd"/>
  <button className='btn btn-danger' onClick={login}>Login</button>
       </div>
-    </div>
+      </div>
+   
   )
 }
 
