@@ -75,10 +75,14 @@
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import Ct from "./Ct"; // Assuming Ct is a context provider
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "../Styling/Home.css"
+import Hero from "./Hero";
 
 const Home = () => {
+// these ishor hero slideshow
+const loc = useLocation()
+
   // State to store products
   let [prod, setProd] = useState([]);
 
@@ -158,6 +162,11 @@ const Home = () => {
   };
 
   return (
+
+    // showing slidebar
+    <div>
+      {loc.pathname === '/' && <Hero />}
+
     <div className="container-fluid dflex" style={{
       "flexWrap": "wrap",
       "justifyContent": "space-evenly",
@@ -182,6 +191,7 @@ const Home = () => {
           );
         })
       }
+    </div>
     </div>
   );
 };
